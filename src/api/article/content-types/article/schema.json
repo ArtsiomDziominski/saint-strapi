@@ -15,10 +15,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text",
-      "maxLength": 80
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
@@ -45,7 +41,10 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "Body": {
+    "body": {
+      "type": "blocks"
+    },
+    "description": {
       "type": "blocks"
     }
   }
