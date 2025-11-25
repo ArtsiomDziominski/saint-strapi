@@ -41,10 +41,10 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "body": {
+    "description": {
       "type": "blocks"
     },
-    "description": {
+    "body": {
       "type": "blocks"
     }
   }
