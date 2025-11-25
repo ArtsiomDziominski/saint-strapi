@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "icon_categories",
+  "info": {
+    "singularName": "icon-category",
+    "pluralName": "icon-categories",
+    "displayName": "Icon Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "category": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "unique": true
+    }
+  }
+}
