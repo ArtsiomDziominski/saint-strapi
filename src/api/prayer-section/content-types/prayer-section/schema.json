@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prayer_sections",
+  "info": {
+    "singularName": "prayer-section",
+    "pluralName": "prayer-sections",
+    "displayName": "Prayer Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "catId": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "additionalInfo": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "prayers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::prayer.prayer",
+      "mappedBy": "sections"
+    },
+    "sectionId": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}
